@@ -1,26 +1,16 @@
-import Link from "next/link";
+import Menu from "../components/Menu/Menu";
+import CardList from "../components/cardList/CardList";
+import CategoryList from "../components/categoryList/CategoryList";
+import Featured from "../components/featured/Featured";
+import styles from "./homepage.module.css"
 export default function Home() {
-  return <div>
-    <Link href="/">
-      
-      <h1>LoremProident</h1>
-      LoremProident velit nisi duis est amet sint minim ex veniam. Dolor occaecat consequat adipisicing fugiat pariatur
-      ullamco commodo minim deserunt irure dolore. Tempor cillum incididunt nisi exercitation et proident sint et. Magna cupidatat
-      officia ad exercitation commodo.LoremProident velit nisi duis est amet sint minim ex veniam. Dolor occaecat consequat adipisicing fugiat pariatur
-      ullamco commodo minim deserunt irure dolore. Tempor cillum incididunt nisi exercitation et proident sint et. Magna cupidatat
-      officia ad exercitation commodo.LoremProident velit nisi duis est amet sint minim ex veniam. Dolor occaecat consequat adipisicing fugiat pariatur
-      ullamco commodo minim deserunt irure dolore. Tempor cillum incididunt nisi exercitation et proident sint et. Magna cupidatat
-      officia ad exercitation commodo.
-      LoremProident velit nisi duis est amet sint minim ex veniam. Dolor occaecat consequat adipisicing fugiat pariatur
-      ullamco commodo minim deserunt irure dolore. Tempor cillum incididunt nisi exercitation et proident sint et. Magna cupidatat
-      officia ad exercitation commodo.LoremProident velit nisi duis est amet sint minim ex veniam. Dolor occaecat consequat adipisicing fugiat pariatur
-      ullamco commodo minim deserunt irure dolore. Tempor cillum incididunt nisi exercitation et proident sint et. Magna cupidatat
-      officia ad exercitation commodo.LoremProident velit nisi duis est amet sint minim ex veniam. Dolor occaecat consequat adipisicing fugiat pariatur
-      ullamco commodo minim deserunt irure dolore. Tempor cillum incididunt nisi exercitation et proident sint et. Magna cupidatat
-      officia ad exercitation commodo.LoremProident velit nisi duis est amet sint minim ex veniam. Dolor occaecat consequat adipisicing fugiat pariatur
-      ullamco commodo minim deserunt irure dolore. Tempor cillum incididunt nisi exercitation et proident sint et. Magna cupidatat
-      officia ad exercitation commodo.LoremProident velit nisi duis est amet sint minim ex veniam. Dolor occaecat consequat adipisicing fugiat pariatur
-      ullamco commodo minim deserunt irure dolore. Tempor cillum incididunt nisi exercitation et proident sint et. Magna cupidatat
-      officia ad exercitation commodo.</Link>
+  return <div className={styles.container}>
+
+    <Featured />
+    <CategoryList />
+    <div className={styles.content}>
+      <CardList />
+      <Menu />
+    </div>
   </div>
 }
