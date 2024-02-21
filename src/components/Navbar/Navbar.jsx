@@ -13,7 +13,7 @@ const Navbar = () => {
             <Image src="/instagram.png" alt="instagram icon" width={24} height={24}></Image>
             <Image src="/youtube.png" alt="youtube icon" width={24} height={24}></Image>
         </div>
-        <div className={styles.logo}>Bitchy Blog</div>
+        <div className={styles.logo}>Bitchy Blogs</div>
         <div className={styles.links}>
             <ThemeToggle />
             <Link href="/" className={styles.link}>Homepage</Link>
